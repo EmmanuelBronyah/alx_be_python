@@ -2,7 +2,7 @@ FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
 def convert_to_fahrenheit(celsius):
-  result = CELSIUS_TO_FAHRENHEIT_FACTOR * celsius + 32
+  result = 32 + celsius * CELSIUS_TO_FAHRENHEIT_FACTOR
   print(f'{float(celsius)}°C is {float(result)}°F')
   return result
 
