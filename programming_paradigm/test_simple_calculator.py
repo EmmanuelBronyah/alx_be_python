@@ -13,24 +13,24 @@ class TestSimpleCalculator(unittest.TestCase):
     self.assertEqual(self.calc.add(-1, 1), 0)
     self.assertEqual(self.calc.add(-1, -1), -2)
   
-  def test_subtract(self):
+  def test_subtraction(self):
     """Test the subtract method."""
-    self.assertEqual(self.calc.subtract(1, 1), 0)
-    self.assertEqual(self.calc.subtract(-1, 4), -5)
-    self.assertEqual(self.calc.subtract(-3, -1), -2)
+    self.assertEqual(self.calc.subtraction(1, 1), 0)
+    self.assertEqual(self.calc.subtraction(-1, 4), -5)
+    self.assertEqual(self.calc.subtraction(-3, -1), -2)
   
-  def test_multiply(self):
+  def test_multiplication(self):
     """Test the subtract method."""
-    self.assertEqual(self.calc.multiply(2, 2), 4)
-    self.assertEqual(self.calc.multiply(-2, 4), -8)
-    self.assertEqual(self.calc.multiply(-3, -1), 3)
+    self.assertEqual(self.calc.multiplication(2, 2), 4)
+    self.assertEqual(self.calc.multiplication(-2, 4), -8)
+    self.assertEqual(self.calc.multiplication(-3, -1), 3)
   
-  def test_divide(self):
+  def test_division(self):
     """Test the subtract method."""
-    self.assertEqual(self.calc.divide(6, 3), 2)
-    self.assertEqual(self.calc.divide(-2, 4), -0.5)
-    self.assertEqual(self.calc.divide(-5, -1), 5)
-    self.assertEqual(self.calc.divide(7, 0), None)
+    self.assertEqual(self.calc.division(6, 3), 2)
+    self.assertEqual(self.calc.division(-2, 4), -0.5)
+    self.assertEqual(self.calc.division(-5, -1), 5)
+    self.assertEqual(self.calc.division(7, 0), None)
 
 if __name__ == "__main__":
   unittest.main()
