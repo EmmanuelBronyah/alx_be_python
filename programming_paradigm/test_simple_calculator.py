@@ -19,7 +19,7 @@ class TestSimpleCalculator(unittest.TestCase):
     self.assertEqual(self.calc.subtraction(-1, 4), -5)
     self.assertEqual(self.calc.subtraction(-3, -1), -2)
   
-  def test_multiply(self):
+  def test_multiplication(self):
     """Test the subtract method."""
     self.assertEqual(self.calc.multiply(2, 2), 4)
     self.assertEqual(self.calc.multiply(-2, 4), -8)
@@ -27,10 +27,10 @@ class TestSimpleCalculator(unittest.TestCase):
   
   def test_division(self):
     """Test the subtract method."""
-    self.assertEqual(self.calc.division(6, 3), 2)
-    self.assertEqual(self.calc.division(-2, 4), -0.5)
-    self.assertEqual(self.calc.division(-5, -1), 5)
-    self.assertEqual(self.calc.division(7, 0), None)
+    self.assertEqual(self.calc.divide(6, 3), 2)
+    self.assertEqual(self.calc.divide(-2, 4), -0.5)
+    self.assertEqual(self.calc.divide(-5, -1), 5)
+    self.assertEqual(self.calc.divide(7, 0), None)
 
 if __name__ == "__main__":
   unittest.main()
